@@ -28,7 +28,7 @@ Mithilfe von Docker Compose werden sowohl der Node.js-Server als auch der Postgr
 ## Installation und Ausführung
 
 1. Klone dieses Repository.
-2. Führe den Befehl aus:
+2. Führe folgenden Befehl aus:
 
    docker-compose up
 
@@ -37,12 +37,16 @@ Mithilfe von Docker Compose werden sowohl der Node.js-Server als auch der Postgr
 
 ## Schwierigkeiten
 
-Während der Umsetzung dieses Projekts bin ich auf einige fiktive Herausforderungen gestoßen:
+Während der Umsetzung dieses Projekts bin ich auf einige Herausforderungen gestoßen:
 
-Datenbankverbindung: Es gab anfänglich Probleme, eine stabile Verbindung zur PostgreSQL-Datenbank herzustellen. Der Pool-Mechanismus war ungewohnt. Generell war das Arbeiten mit node.js viel Trial&Error.
-Docker Networking: Das Verbinden der beiden Container (Node.js und PostgreSQL) über Docker Compose bereitete mir Schwierigkeiten, insbesondere bei der richtigen Konfiguration der Umgebungsvariablen und der Hostnamen.
+Datenbankverbindung: Es gab anfänglich Probleme, eine stabile Verbindung zur PostgreSQL-Datenbank herzustellen. 
+Der Pool-Mechanismus war ungewohnt. Generell war das Arbeiten mit node.js viel Trial&Error.
+
+Docker Networking: Das Verbinden der beiden Container (Node.js und PostgreSQL) über Docker Compose erforderte am Anfang etwas Recherche.
+
 SQL-Abfragen für Statistiken: Die Abfrage der Anzahl von Anfragen in den letzten 30 Sekunden, 5 Minuten und 1 Stunde erforderte das ich mich noch einmal in SQL bzw. PostgreSQL-Interna (insbesondere pg_stat_activity), einarbeiten musste.
-Frontend/Backend-Kommunikation: Es war eine Herausforderung, die Informationen im richtigen JSON-Format aus der Datenbank zu holen und sie korrekt auf der Hauptseite zu verlinken.
+
+Frontend/Backend-Kommunikation: JSON war wie immer nervig, wenn man nicht regelmäßig mit arbeitet
 
 Hinweis zur Codebasis
 
