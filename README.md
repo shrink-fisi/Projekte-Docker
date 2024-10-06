@@ -9,8 +9,8 @@ Dies ist ein Repository, das mehrere Docker-Projekte enthält. Jedes Projekt hat
 - **Beschreibung**: Eine Webanwendung, die auf Node.js basiert und mit einer PostgreSQL-Datenbank über Docker Compose integriert ist.
 
 ### Projekt 2
-- **Ordner**: [projekt2](./projekt2)
-- **Beschreibung**: Beschreibung für Projekt 2.
+- **Ordner**: [prometheus-grafana](./prometheus-grafana)
+- **Beschreibung**: Ein Docker Compose-Projekt zur Überwachung von Hosts und Containern mit Prometheus, Grafana, Node Exporter und cAdvisor.
 
 ### Projekt 3
 - **Ordner**: [projekt3](./projekt3)
@@ -20,4 +20,4 @@ Dies ist ein Repository, das mehrere Docker-Projekte enthält. Jedes Projekt hat
 Jedes Unterprojekt hat seine eigene README.md-Datei, die spezifische Informationen und Anweisungen enthält.
 
 ## Hinweise 2
-Diese Readme.MD wurde durch ChatGPT generiert.
+Diese README.md wurde durch ChatGPT generiert.
