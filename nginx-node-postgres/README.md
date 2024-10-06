@@ -51,7 +51,7 @@ bzw. PostgreSQL-Interna (insbesondere pg_stat_activity), einarbeiten musste.
 Frontend/Backend-Kommunikation: JSON ist immer nervig, wenn man wenig damit arbeitet.
 
 ## Hinweis zur Codebasis
-=======
+
 Datenbankverbindung: Es gab anfänglich Probleme, eine stabile Verbindung zur PostgreSQL-Datenbank herzustellen. Der Pool-Mechanismus war ungewohnt.   
 Generell war das Arbeiten mit node.js viel Trial&Error und Suchen im Inet.  
 
@@ -64,6 +64,5 @@ bzw. PostgreSQL-Interna (insbesondere pg_stat_activity), einarbeiten musste.
 Frontend/Backend-Kommunikation: Es war eine Herausforderung, die Informationen im richtigen JSON-Format aus der Datenbank zu holen und sie korrekt auf der Hauptseite zu verlinken.  
 
 ## Hinweis zum Code
->>>>>>> Stashed changes
 
 Der JavaScript-Code, insbesondere für die Datenbankabfragen und die Verarbeitung der Ergebnisse, wurde größtenteils aus verschiedenen Quellen im Internet zusammengetragen. Ich habe ihn dann entsprechend der Anforderungen dieses Projekts angepasst und erweitert. Viele Fragmente stammen aus Foren, Tutorials und der offiziellen Dokumentation von Express.js und PostgreSQL.
