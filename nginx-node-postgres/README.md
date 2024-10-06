@@ -42,7 +42,6 @@ Während der Umsetzung dieses Projekts bin ich auf einige Herausforderungen gest
 Datenbankverbindung: Es gab anfänglich Probleme, eine stabile Verbindung zur PostgreSQL-Datenbank herzustellen. Der Pool-Mechanismus war ungewohnt. 
 Generell war das Arbeiten mit node.js viel Trial&Error und Recherche.
 
-<<<<<<< Updated upstream
 Docker Networking: Das Verbinden der beiden Container (Node.js und PostgreSQL) über Docker Compose bereitete mir Schwierigkeiten, insbesondere bei der richtigen Konfiguration der Umgebungsvariablen und der Hostnamen.
 
 SQL-Abfragen für Statistiken: Die Abfrage der Anzahl von Anfragen in den letzten 30 Sekunden, 5 Minuten und 1 Stunde erforderte das ich mich noch einmal in SQL 
