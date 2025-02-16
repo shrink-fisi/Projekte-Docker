@@ -1,0 +1,53 @@
+﻿services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab
+    hostname: gitlab.local
+    restart: always
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab.local'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
+    ports:
+      - '80:80'
+      - '443:443'
+      - '2222:22'
+    volumes:
+      - gitlab_config:/etc/gitlab
+      - gitlab_logs:/var/log/gitlab
+      - gitlab_data:/var/opt/gitlab
+
+  gitlab-runner:
+    image: gitlab/gitlab-runner:latest
+    container_name: gitlab-runner
+    restart: always
+    depends_on:
+      - gitlab
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - gitlab_runner_config:/etc/gitlab-runner
+
+  vault:
+    image: hashicorp/vault:latest
+    container_name: vault
+    restart: always
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root
+    ports:
+      - '8200:8200'
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - vault_data:/vault/data
+
+networks:
+  default:
+    name: gitlab_network
+    driver: bridge
+
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:
+  gitlab_runner_config:
+  vault_data:

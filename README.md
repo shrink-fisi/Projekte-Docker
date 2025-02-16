@@ -13,11 +13,8 @@ Dies ist ein Repository, das mehrere Docker-Projekte enthält. Jedes Projekt hat
 - **Beschreibung**: Ein Docker Compose-Projekt zur Überwachung von Hosts und Containern mit Prometheus, Grafana, Node Exporter und cAdvisor.
 
 ### Projekt 3
-- **Ordner**: [projekt3](./projekt3)
-- **Beschreibung**: Beschreibung für Projekt 3.
+- **Ordner**: [gitlab-vault-gitlab_runner](./gitlab_runner-vault)
+- **Beschreibung**: Ein Docker Compose-Projekt zur automatisierten Bereitstellung einer lokalen GitLab-Instanz, eines GitLab Runners und eines HashiCorp Vault-Containers.
 
 ## Hinweise
 Jedes Unterprojekt hat seine eigene README.md-Datei, die spezifische Informationen und Anweisungen enthält.
-
-## Hinweise 2
-Diese README.md wurde durch ChatGPT generiert.
